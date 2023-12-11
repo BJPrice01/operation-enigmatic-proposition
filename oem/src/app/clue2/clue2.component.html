@@ -2,6 +2,7 @@
     <div class="layoutElementHorizontal reverseColResponsive main">
         <div class="layoutElementVertical">
             <h2>Clue Two</h2>
+            <hr />
             <app-question-form [questionNum]="2" (fullyAnswered)="handleAnswersGiven($event)">
                 A liquid powerful enough to make you shit,<br><br>
                 Pastries, sandwiches, and drinks are a hit,<br><br>
@@ -11,7 +12,7 @@
             <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d794.5087375483016!2d-87.87903743147857!3d41.250857812728896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDunkin&#39;%20Donuts!5e0!3m2!1sen!2sus!4v1702288570091!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <p>Next Clue at 10:00am</p>
-                <a class="buttonLink" href="https://maps.app.goo.gl/wWV6ni18Md4WBi6J9">MAPS</a>
+                <a class="buttonLink" href="https://maps.app.goo.gl/wWV6ni18Md4WBi6J9" target="_blank" rel="noopener noreferrer">MAPS</a>
             </div>
         </div>
     </div>

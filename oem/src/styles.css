@@ -60,6 +60,14 @@
     }
 }
 
+hr {
+    color: var(--onyx);
+    background-color: var(--onyx);
+    border:none;
+    width: 90%;
+    height: 4px;
+}
+
 body {
     background-color: var(--backgroud);
     display: flex;

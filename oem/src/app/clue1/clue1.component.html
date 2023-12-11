@@ -2,8 +2,10 @@
     <div class="layoutElementHorizontal reverseColResponsive main">
         <div class="layoutElementVertical">
             <h2>Clue One</h2>
-            <app-question-form [questionNum]="1" (fullyAnswered)="handleAnswersGiven($event)">A dynamic duo with friendship true,<br>
-                Horses, fowl, and a big cat that goes mew,<br> 
+            <app-question-form [questionNum]="1" (fullyAnswered)="handleAnswersGiven($event)">
+                A dynamic duo with friendship true,<br><br>
+                Horses, fowl, and a big cat that goes mew,<br><br> 
+                Lets begin the day without further ado,<br><br> 
                 Who are the pair that are coming for you?
             </app-question-form>
             <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">

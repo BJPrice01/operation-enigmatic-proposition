@@ -1,0 +1,18 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue Three</h2>
+            <app-question-form [questionNum]="3" (fullyAnswered)="handleAnswersGiven($event)">
+                Now equipped with some wind in your sails,<br><br>
+                its time to enjoy obsessing over details,<br><br>
+                Your brain gets foggy when your body inhales,<br><br>
+                What is this place, great to share tales?
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href=>MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

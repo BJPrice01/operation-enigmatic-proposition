@@ -1,0 +1,18 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue Six</h2>
+            <app-question-form [questionNum]="6" (fullyAnswered)="handleAnswersGiven($event)">
+                With a belly full, let's return to the windy city,<br><br>
+                We can continue working on the nitty-gritty,<br><br>
+                Sold in quantities itty-bitty,<br><br>
+                Let's top you off on some stuff to help you stay pretty.
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href=>MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

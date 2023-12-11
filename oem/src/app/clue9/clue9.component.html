@@ -1,0 +1,18 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue Nine</h2>
+            <app-question-form [questionNum]="9" (fullyAnswered)="handleAnswersGiven($event)">
+                With pictures on the way that will shimmer,<br><br>
+                I hope today has made you feel like a winner,<br><br>
+                With a two items familiar to a minecraft beginner,<br><br>
+                Where is our final stop for dinner?
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href=>MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

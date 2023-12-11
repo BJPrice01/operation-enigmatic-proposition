@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --rosegold: #f1d4a9;
+    --onyx: #181818;
+    --moissanite: rgb(208, 236, 238);
+    --backgroud: #4d4d4d;
+}
+
+@font-face {
+    font-family: fancyFont;
+    src: url(assets/BodoniModa.ttf);
+}
+
+.hidden {
+    display: none;
+}
+
+.layoutElementVertical {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.layoutElementHorizontal {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+@media only screen and (max-width:768px){
+    .layoutElementVertical {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 90%;
+    }
+    
+    .layoutElementHorizontal {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 90%;
+    }
+    
+    .reverseColResponsive {
+        flex-flow: column-reverse wrap-reverse;
+    }
+
+    .map {
+        max-width: 80%;
+        max-height: auto;
+    }
+}
+
+body {
+    background-color: var(--backgroud);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex:1;
+}
+
+p {
+    color: var(--rosegold);
+    font-family: fancyFont;
+    font-size: x-large;
+    line-height: 1em;
+    text-align: center;
+}
+
+h2 {
+    font-family: fancyFont;
+    text-align: center;
+    color: var(--rosegold);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.buttonLink {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--onyx);
+    border-radius: 15px;
+    font-family: fancyFont;
+    font-weight: bold;
+    font-size: large;
+}
+.buttonLink:link {
+    color: var(--rosegold);
+    text-decoration: none;
+    background-color: var(--onyx);
+}
+.buttonLink:visited {
+    color: var(--rosegold);
+    text-decoration: none;
+    background-color: var(--onyx);
+}
+.buttonLink:hover {
+    text-decoration: none;
+    color:var(--onyx);
+    background-color: var(--moissanite);
+}
+.buttonLink:active {
+    color: var(--rosegold);
+    text-decoration: none;
+    background-color: var(--onyx);
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--onyx);
+    color: var(--rosegold);
+    border-radius: 15px;
+    font-family: fancyFont;
+    font-weight: bold;
+    border: none;
+    font-size: large;
+}
+
+.youtube {
+    border-radius: 15px;
+    border: solid var(--moissanite) 3px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 90vh;
+}
+ 
+.layoutElementVerticalNonResponsive {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.layoutElementHorizontalNonResponsive {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.main {
+    flex-grow: 1;
+    flex-shrink: 0;
+}

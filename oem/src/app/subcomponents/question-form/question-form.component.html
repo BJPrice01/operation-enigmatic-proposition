@@ -1,0 +1,10 @@
+<p><ng-content></ng-content></p>
+<form class="layoutElementVertical" style="width: 100%;" [formGroup]="answersForm" (ngSubmit)="onSubmit()">
+    <div *ngFor="let answer of correctAnswers; let i = index">
+        <input formControlName="answer{{i}}" placeholder="{{this.fakeAnswers[i]}}" class="input" type="text" />
+        <div *ngIf="!isCorrect[i]">
+            <p class="errorText" [ngClass] = "{hidden: !hasSubmitted}">Starts with {{this.correctAnswers[i][0]}}, {{this.correctAnswers[i].length}} letters long</p>
+        </div>
+    </div>
+    <button class="button">CHECK</button>
+</form>

@@ -1,0 +1,16 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue One</h2>
+            <app-question-form [questionNum]="1" (fullyAnswered)="handleAnswersGiven($event)">A dynamic duo with friendship true,<br>
+                Horses, fowl, and a big cat that goes mew,<br> 
+                Who are the pair that are coming for you?
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1155.3603331649629!2d-87.72867111659133!3d41.316832715579764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1702235130172!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href="https://maps.app.goo.gl/Rq2PzB5pXejFMwmT9">MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

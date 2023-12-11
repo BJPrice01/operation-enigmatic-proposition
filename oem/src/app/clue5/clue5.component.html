@@ -1,0 +1,18 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue Five</h2>
+            <app-question-form [questionNum]="5" (fullyAnswered)="handleAnswersGiven($event)">
+                Your response shook my work on a scale tectonic,<br><br>
+                With weather so cold it could be demonic,<br><br>
+                The backseat with an alcoholic tonic,<br><br>
+                Where did we feast post Sonic?
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href=>MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

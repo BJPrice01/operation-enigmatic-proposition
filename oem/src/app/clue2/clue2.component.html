@@ -1,0 +1,18 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue Two</h2>
+            <app-question-form [questionNum]="2" (fullyAnswered)="handleAnswersGiven($event)">
+                A liquid powerful enough to make you shit,<br><br>
+                Pastries, sandwiches, and drinks are a hit,<br><br>
+                The removal of part of the name gives me a fit,<br><br>
+                A classic morning stop that we can't omit.
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href=>MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

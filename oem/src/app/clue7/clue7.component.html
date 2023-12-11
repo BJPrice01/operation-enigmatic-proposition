@@ -1,0 +1,18 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue Seven</h2>
+            <app-question-form [questionNum]="7" (fullyAnswered)="handleAnswersGiven($event)">
+                While I may not be a big fan of these,<br><br>
+                I appreciate how they make you feel at ease,<br><br>
+                They are thought of by some to ward of disease,<br><br>
+                What are these things, preferred rocks of fairies?
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href=>MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

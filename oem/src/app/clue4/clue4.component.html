@@ -1,0 +1,18 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Clue Four</h2>
+            <app-question-form [questionNum]="4" (fullyAnswered)="handleAnswersGiven($event)">
+                The next location is a great place for therapy retail,<br><br>
+                A spot that brings serotonin without fail,<br><br>
+                Round out your fashion with what they have on sale,<br><br>
+                Because when you leave you'll look like you're from a fairytale.
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Next Clue at 10:00am</p>
+                <a class="buttonLink" href=>MAPS</a>
+            </div>
+        </div>
+    </div>
+</div>

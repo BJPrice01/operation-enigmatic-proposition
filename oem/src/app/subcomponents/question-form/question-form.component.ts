@@ -12,13 +12,13 @@ export class QuestionFormComponent {
   [
     ['Meg','Toni'],
     ['Dunkin'],
-    ['La Vida'],
+    ['Nails'],
     ['Maurices'],
     ['Culvers'],
     ['Ulta'],
     ['Crystals'],
     ['Manteno'],
-    ['Brickstone?']
+    ['Brickstone']
   ]
   correctAnswers: Array<string> = []
   isCorrect: Array<boolean> = []

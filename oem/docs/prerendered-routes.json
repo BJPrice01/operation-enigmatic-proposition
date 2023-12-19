@@ -1,0 +1,16 @@
+{
+  "routes": [
+    "/",
+    "/clue1",
+    "/clue2",
+    "/clue3",
+    "/clue4",
+    "/clue5",
+    "/clue6",
+    "/clue7",
+    "/clue8",
+    "/clue9",
+    "/end",
+    "/intro"
+  ]
+}

@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "devBuild": "ng build --output-path docs --base-href /operation-enigmatic-proposition/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

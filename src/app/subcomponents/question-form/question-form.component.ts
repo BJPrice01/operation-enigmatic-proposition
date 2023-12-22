@@ -16,7 +16,7 @@ export class QuestionFormComponent {
     ['Maurices'],
     ['Culvers'],
     ['Ulta'],
-    ['Crystals'],
+    ['Home'],
     ['Manteno'],
     ['Brickstone']
   ]

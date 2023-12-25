@@ -1,0 +1,17 @@
+<div class="layout">
+    <div class="layoutElementHorizontal reverseColResponsive main">
+        <div class="layoutElementVertical">
+            <h2>Merry Christmas</h2>
+            <hr />
+            <app-question-form [questionNum]="10" (fullyAnswered)="handleAnswersGiven($event)">
+                With Santa returning home after so many flights,<br><br>
+                My previous hints should have given you some insights,<br><br>
+                Its kind of rock doesn't belong to one of the calcites,<br><br>
+                What is it that will eventually arrive ONE OF THESE NIGHTS?
+            </app-question-form>
+            <div class="layoutElementVertical" style="margin-top: 10px;" *ngIf="passed">
+                <img src="assets/earrings.jpg" alt="A Christmas gift">
+            </div>
+        </div>
+    </div>
+</div>

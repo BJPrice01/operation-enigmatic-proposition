@@ -17,6 +17,7 @@ import { Clue8Component } from './clue8/clue8.component';
 import { Clue9Component } from './clue9/clue9.component';
 import { QuestionFormComponent } from './subcomponents/question-form/question-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { XmasComponent } from './xmas/xmas.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     Clue7Component,
     Clue8Component,
     Clue9Component,
-    QuestionFormComponent
+    QuestionFormComponent,
+    XmasComponent
   ],
   imports: [
     BrowserModule,

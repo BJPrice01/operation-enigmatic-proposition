@@ -18,7 +18,8 @@ export class QuestionFormComponent {
     ['Ulta'],
     ['Home'],
     ['Manteno'],
-    ['Brickstone']
+    ['Brickstone'],
+    ['Earrings']
   ]
   correctAnswers: Array<string> = []
   isCorrect: Array<boolean> = []

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-xmas',
-  templateUrl: './xmas.component.html',
-  styleUrl: './xmas.component.css'
+  templateUrl: './xmas2024.component.html',
+  styleUrl: './xmas2024.component.css'
 })
 export class XmasComponent {
   passed: boolean = false  

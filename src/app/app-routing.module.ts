@@ -12,7 +12,7 @@ import { Clue7Component } from './clue7/clue7.component';
 import { Clue8Component } from './clue8/clue8.component';
 import { Clue9Component } from './clue9/clue9.component';
 import { EndComponent } from './end/end.component';
-import { XmasComponent } from './xmas/xmas2024.component';
+import { XmasComponent } from './xmas/xmas.component';
 
 const routes: Routes = [
   {path: '', component:  HomeComponent},
@@ -27,7 +27,7 @@ const routes: Routes = [
   {path: 'kLmNo', component:  Clue8Component},
   {path: 'eRtYi', component:  Clue9Component},
   {path: 'index', component:  EndComponent},
-  {path: 'xmas2024', component:  XmasComponent},
+  {path: 'xmas', component:  XmasComponent},
   {path: '**', component:  HomeComponent},
 ];
 

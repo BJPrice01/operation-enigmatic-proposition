@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { XmasComponent } from './xmas2024.component';
+import { XmasComponent } from './xmas.component';
 
 describe('XmasComponent', () => {
   let component: XmasComponent;

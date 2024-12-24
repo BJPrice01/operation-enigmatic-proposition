@@ -27,7 +27,7 @@ const routes: Routes = [
   {path: 'kLmNo', component:  Clue8Component},
   {path: 'eRtYi', component:  Clue9Component},
   {path: 'index', component:  EndComponent},
-  {path: 'xmas', component:  XmasComponent},
+  {path: 'xmas2024', component:  XmasComponent},
   {path: '**', component:  HomeComponent},
 ];
 
